@@ -9,11 +9,11 @@ def entidade(a):
         return a
     elif a == 'me ajude calculadora 2000':
         print('C maiusculo, Calculadora2000, tudo junto, voce está testando minha paciencia')
-        return a 
+        return a
+        
+clamar = input("se ajoelhe e clame pela a ajuda Calculadora2000 *me ajude Calculadora2000*: ") #input que define a variável que vai ser usada na fórmula 
 
-clamar = input("se ajoelhe e clame pela a ajuda Calculadora2000 *me ajude Calculadora2000*: ")
-
-print(entidade(clamar))
+print(entidade(clamar)) #esse comando vai printar o resultado da formula "entidade" de acordo com a input realizada no comando acima
         
 def calculadora(n1,op,n2):
     if op == "somar":
@@ -32,7 +32,7 @@ def calculadora(n1,op,n2):
         return x
         
 numero1 = int(input("digite um valor: "))
-operacao = input("o que deseja fazer? Somar, dividir, multiplicar, subtrair, potencia?: ").lower()
+operacao = input("o que deseja fazer? Somar, dividir, multiplicar, subtrair, potencia?: ").lower() #o ".lower()" é responsável por transcrever a input do usuário para letras minúsculas
 numero2 = int(input("digite o segundo valor: "))
 
 print(calculadora(numero1,operacao,numero2))
